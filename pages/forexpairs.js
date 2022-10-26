@@ -53,7 +53,7 @@ const { data, error } = useSWR(
         onSelect={handleChange}
       >
         {keys.map((key) => (
-          <MenuItem value={key}>{key}</MenuItem>
+          <MenuItem key= {key} value={key}>{key}</MenuItem>
         ))}
       </Select>
     </FormControl>
